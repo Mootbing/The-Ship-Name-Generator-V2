@@ -33,7 +33,6 @@ class ShipNameGenerator:
     self.Simp2 = self.SplitName(self.Simp2)
     self.ShipNames = self.CombNames(self.Simp1, self.Simp2) + self.CombNames(self.Simp2, self.Simp1)
     self.WordShipNames = [x for x in self.ShipNames if IsAWord(x)]
-    
 
 if __name__ == '__main__':
   Simp1 = input('Simp1: ').lower()
